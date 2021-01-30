@@ -19,5 +19,9 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
     if(array.length == 0) return 0;
-    
+    let sum = 0;
+    for(let i in array){
+        sum += array[i];
+    }
+    return sum / array.length;
 }
